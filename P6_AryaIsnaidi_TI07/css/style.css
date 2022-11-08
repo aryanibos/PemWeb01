@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px black solid;
+    padding: 15px;
+}
+
+thead {
+    font-weight: bold;
+    background-color: chocolate;
+}
+
+tbody {
+    background-color: aqua;
+}
