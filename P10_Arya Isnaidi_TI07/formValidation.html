@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pratikum 10.3</title>
+</head>
+
+<body>
+    <fieldset style="width: 30%; margin-left: auto; margin-right: auto; padding: 5em;">
+        <legend>FORM DATA TIKET</legend>
+        <form onsubmit="return false">
+            <table>
+                <tr>
+                    <td>
+                        <label>Nama Pengguna </label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="nama" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email </label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="email" id="email" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Jam Keberangkatan </label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="time" id="jam" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Tujuan Keberangkatan </label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="tujuan" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Jumlah Tiket </label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="number" id="jumlah" min="1" max="10" required />
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <center>
+                <button id="tombol_form">Kirim</button>
+            </center>
+        </form>
+    </fieldset>
+
+    <br />
+    <br />
+
+    <h2><span id="hasil"></span></h2>
+</body>
+
+<script>
+    document.getElementById("tombol_form").
+        addEventListener("click", tampilkan_nilai_form);
+
+    function tampilkan_nilai_form() {
+        let intNama = document.getElementById("nama").value;
+        let intEmail = document.getElementById("email").value;
+        let intJam = document.getElementById("jam").value;
+        let intTujuan = document.getElementById("tujuan").value;
+        let intJumlah = document.getElementById("jumlah").value;
+
+        document.getElementById("hasil").innerHTML = "Nama Pelanggan : " + intNama + "<br>Email : " + intEmail + "<br>Jam Keberangkatan : " + intJam + "<br>Tujuan Keberangkatan : " + intTujuan + "<br>Jumlah Tiket : " + intJumlah;
+    }
+</script>
+
+</html>
