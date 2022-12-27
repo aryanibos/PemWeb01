@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Pizza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+   <fieldset style="width: 30%; margin-left: auto; margin-right: auto;">
+    <form>
+        <strong>Black Goose Bistroi | Pizza-On-Demand</strong>
+        <p>Our 12 wood-fired pizzas are available for delivery.Build your <br>custom pizza we'll deliver it within an hour.</p>
+        Your Information
+        <br>
+        <label for="id_name">Name: </label>
+        <input type="text" name="name" id="id_name" placeholder="Enter Your Name">
+        <br>
+        <label for="id_addres">Address: </label>
+        <input type="text" name="addres" id="id_addres" placeholder="Enter Your Addres">
+        <br>
+        <label for="id_telephone">Telephone Number: </label>
+        <input type="tel" name="telephone" id="id_telephone" placeholder="Enter Your Telephone">
+        <br>
+        <label for="id_email">Email: </label>
+        <input type="email" name="email" id="id_email" placeholder="Enter Your Email">
+        <br>
+        <label for="id_message">Delivery instructions: </label>
+        <br>
+        <textarea maxlength="400" name="message" id="id_message" cols="40" rows="5"></textarea>
+        <br><br>
+        <b>Design Your Dream Pizza:</b>
+        <br>
+        Pizza spech
+        <br><br>
+        <label for="id_crust">Crusst (Shoose one):</label>
+        <ul type="none">
+            <li><input type="radio" name="crust" value="Classic White">Classic White</li>
+            <li><input type="radio" name="crust" value="Multigrain">Multigrain</li>
+            <li><input type="radio" name="crust" value="Cheese-stuffed Crust">Cheese-stuffed Crust</li>
+            <li><input type="radio" name="crust" value="Gluten-free">Gluten-free</li>
+        </ul>
+        <br>
+        <label for="id_topping">Toppings (Shoose as many as you want):</label>
+        <br>
+        <ul type="none">
+            <li><input type="checkbox" name="tooping[]" value="Red souce">Red souce</li>
+            <li><input type="checkbox" name="tooping[]" value="White souce">White souce</li>
+            <li><input type="checkbox" name="tooping[]" value="Mozzarella Cheese">Mozzarella Cheese</li>
+            <li><input type="checkbox" name="tooping[]" value="Pepperoni">Pepperoni</li>
+            <li><input type="checkbox" name="tooping[]" value="Mushrooms">Mushrooms</li>    
+            <li><input type="checkbox" name="tooping[]" value="Peppers">Peppers</li>
+            <li><input type="checkbox" name="tooping[]" value="Anchovies">Anchovies</li>        
+        </ul>
+        Number <br>
+        <label for="id_pizza">How many pizza: </label>
+        <select name="pizza" id="id_pizza">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Bring me a pizza!" style="
+        font-family: 'Poppins', sans-serif;
+        margin-right: 5px; 
+        margin-left: -6px;
+        border: 2px solid black; 
+        border-radius: 5px; 
+        ">
+        <input type="reset" value="Reset" style="
+         font-family: 'Poppins', sans-serif;
+        border: 2px solid black; 
+        border-radius: 5px; 
+        ">
+
+    </form>
+   </fieldset>
+</body>
+</html>

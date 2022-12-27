@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pemesanan Barang</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body style="
+font-family: 'Poppins',sans-serif;
+background-color: lavender;
+">
+  <nav style="margin-top: 20px;">
+    <table align="center" style="
+      border: 2px solid black;
+      ">
+      <tr>
+        <td><strong style="
+          margin-right: 20px;
+          margin-left: 20px;
+          ">Home</strong></td>
+        <td>|</td>
+        <td><strong style="
+          margin-left: 80px;
+          margin-right: 20px;
+          ">Generate Link</strong></td>
+        <td>|</td>
+        <td><strong style="
+          margin-left: 80px;
+          margin-right: 20px;
+          ">Transaction History</strong></td>
+        <td>|</td>
+        <td><strong style="
+        margin-left: 80px;
+        margin-right: 20px;
+        ">Policy</strong></td>
+        <td>|</td>
+        <td><strong style="
+        margin-left: 80px;
+        margin-right: 200px;
+        ">Logout</strong></td>
+      </tr>
+    </table>
+  </nav>
+  <br>
+  <table align="center" width="88%" >
+    <tr>
+      <td>
+        <div class="foto-produk" style="
+        margin-top: -255px;
+        ">
+          <img style="
+          font-family: poppins;
+          border: 2px solid black;
+          " src="img/macbook.jpg" alt="MacBook" width="200px">
+        <br>
+        <input style="
+        font-family: poppins;
+        border: 2px solid black;
+        " type="button" value="Upload Picture" style="width: 130px;">
+        </div>
+      </td>
+      <td>
+        <form>
+          <table>
+            <tr>
+              <td>
+                <label for="id_title">Title Here : </label>
+              </td>
+              <td>
+                <input style="
+                font-family: poppins;
+                border: 2px solid black;
+                width: 450px;
+                " type="text" name="title" id="id_title" value="MacBook Air ">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label style="display: flex;" for="id_deskripsi">Description : <label></label>
+              </td>
+              <td>
+                <textarea style="
+                  font-family: poppins;
+                  border: 2px solid black;
+                  " name="deskripsi" id="id_deskripsi" cols="65" rows="6">&nbsp;Year : 2009
+
+ Model :
+                 
+ Condition : Mint
+                               </textarea>            
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="id_accNumber">Account Numbuer : </label>
+              </td>
+              <td>
+                <input style="
+                font-family: poppins;
+                border: 2px solid black;
+                width: 450px;
+                " type="text" name="accnumber" id="id_accNumber" value="123-456-789-0">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="id_bank"><font style="margin-left: 106px;">Bank :</font> </label>
+              </td>
+              <td>
+                <select style="
+                font-family: poppins;
+                border: 2px solid black;
+                width: 280px;
+                " name="bank" id="id_bank">
+                  <option  value="HSBC">HSBC</option>
+                  <option value="BRI">BRI</option>
+                  <option value="BCA">BCA</option>
+                  <option value="BSI">BSI</option>
+                  <option value="BTN">BTN</option>
+                </select>    
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="id_aacHolder"><font style="margin-left: 20px;">Account Holder : </font></label>
+              </td>
+              <td>
+                <input style="
+                font-family: poppins;
+                border: 2px solid black;
+                width: 340px;
+                " type="text" name="accholder" id="id_aacHolder" value="Arya Isnaidi">
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="2">
+                <label for="id_transaction"><p style="margin-top: -50px; margin-left: 20px;">Transaction :</p> </label>
+              </td>
+              <td>
+                <input type="number" name="transaction" id="id_transaction" value="1" style="width: 25px;
+                font-family: poppins;
+                border: 2px solid black;
+                "><br>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <small>* if the transaction is for 3 person, choose 3 from the drop-down list</small><br>
+                <input type="checkbox" name="mobile_number" checked> <small style="color: rgb(14, 206, 8);">Send to Mobile Phone</small><br>
+                <input type="checkbox" name="email" checked> <small style="color: rgb(14, 206, 8);">Send to Email</small>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="id_mobileNumber"><p>Send to Mobile Phone : </p></label>
+              </td>
+              <td>
+                <input style="
+                font-family: poppins;
+                border: 2px solid black;
+                width: 360px;
+                " type="text" name="mobilenumber" id="id_mobileNumber" value="+6285788241715">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="id_email">Send to Email : </label>
+              </td>
+              <td>
+                <input style="
+                font-family: poppins;
+                border: 2px solid black;
+                width: 360px;
+                " type="email" name="email" value="aryaisnaidi01@gmail.com" id="id_email">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="hasil_barang_0110222146_aryaisnaidi.html">
+                  <input style="
+                background-color: limegreen; 
+                color: white; 
+                box-shadow: 2px 2px 0px 1px black;
+                font-family: poppins;
+                margin-top: 40px;
+                width: 170px;
+                " type="button" value="Generate Nabr Link">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

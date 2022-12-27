@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript 11.2</title>
+</head>
+
+<body>
+    <script>
+        let prodi1 = {
+            id: 1,
+            kode: "SI",
+            nama: "Sistem Informasi",
+            kaprodi: "Misna Azqia M.Kom.",
+            cetak: function () {
+                return this.kode + " - " + this.nama;
+            }
+        };
+        let prodi2 = {
+            id: 2,
+            kode: "TI",
+            nama: "Teknik Informatika",
+            kaprodi: "Tifani Nabarian M.TI",
+            cetak: function () {
+                return this.kode + " - " + this.nama;
+            }
+        };
+        let prodi3 = {
+            id: 3,
+            kode: "BD",
+            nama: "Bisnis Digital",
+            kaprodi: "Dr. Amalia Rahmah M.TI.",
+            cetak: function () {
+                return this.kode + " - " + this.nama;
+            }
+        };
+        let prodis = [prodi1, prodi2, prodi3];
+
+        console.log("Nama Prodi : " + prodi1.nama);
+        console.log("Kaprodinya : " + prodi1.kaprodi);
+        console.log(prodi3.cetak());
+
+        document.write("<table border=\"1\" width=\"100%\">");
+        document.write("<tr><th>No</th><th>Kode</th><th>Prodi</th><th>Kaprodi</th></tr>")
+        let nomor = 0;
+        for (nomor = 0; nomor < prodis.length; nomor++) {
+            document.write("<tr><td>" + nomor + "</td>");
+            document.write("<td>" + prodis[nomor].kode + "</td>");
+            document.write("<td>" + prodis[nomor].nama + "</td>");
+            document.write("<td>" + prodis[nomor].kaprodi + "</td>");
+            document.write("</tr>");
+        }
+        document.write("</table>");
+
+    </script>
+</body>
+
+</html>

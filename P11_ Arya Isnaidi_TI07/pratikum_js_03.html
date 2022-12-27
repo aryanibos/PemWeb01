@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript 11.3</title>
+</head>
+
+<body>
+    <div id="nf" onmouseover="makeBlue()" onmouseout="makeRed()"></div>
+    <button onclick="show()">Tekan Saya</button>
+
+    <script>
+        function show() {
+            let areanf = document.getElementById("nf");
+            areanf.innerHTML = "STT Terpadu Nurul Fikri";
+            areanf.style.color = "magenta";
+            areanf.style.background = "yellow";
+        }
+        function makeBlue() {
+            let areanf = document.getElementById("nf");
+            areanf.style.color = "blue";
+            areanf.style.background = "pink";
+        }
+        function makeRed() {
+            let areanf = document.getElementById("nf");
+            areanf.style.color = "magenta";
+            areanf.style.background = "yellow";
+        }
+    </script>
+</body>
+
+</html>

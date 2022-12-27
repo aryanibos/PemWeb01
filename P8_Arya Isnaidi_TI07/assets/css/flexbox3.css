@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+img {
+    height: 10vw;
+    flex-grow: 1;
+    margin: 2px;
+}

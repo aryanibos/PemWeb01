@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Java Script 11.1</title>
+</head>
+
+<body>
+    <title>Belajar JavaScript</title>
+    <script>
+        let buahs = ["pepaya", "mangga", "apel", "durian"];
+        console.log("Jumlah Buah : " + buahs.length);
+        console.log("Buah Ke 2 adalah " + buahs[1]);
+        buahs.push("manggis");
+        buahs.sort();
+        let i = 0;
+        document.write("Pilih Buah: <select name=\"buah\">");
+        for (i = 0; i < buahs.length; i++) {
+            console.log("Buah index ke - " + i + " adalah : " + buahs[i]);
+            document.write("<li>" + buahs[i] + "</li>");
+            document.write("<option>" + buahs[i] + "</option>");
+        }
+        document.write("</select>");
+    </script>
+</body>
+
+</html>
